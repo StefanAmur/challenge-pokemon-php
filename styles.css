@@ -159,13 +159,15 @@ body {
   align-items: center;
   height: 80px;
   gap: 1.2rem;
+  margin: 1.6rem 0;
 }
 
 #pokemon-search {
+  font-family: 'Press Start 2P', cursive;
   width: 13.4rem;
   height: 1.7rem;
   border-radius: 5px;
-  font-size: 1rem;
+  text-align: center;
 }
 
 #get-pokemon {
@@ -284,4 +286,17 @@ body {
 .evo-h3 {
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
+}
+
+.evolutions-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
 }

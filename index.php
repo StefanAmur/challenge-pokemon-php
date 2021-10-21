@@ -110,8 +110,8 @@ if($species_response->evolves_from_species != null){
 
 
     <div class="search-container">
-        <form action="index.php" method="POST" name="form">
-            <input type="text" id="pokemon-search" name="pokemon" placeholder="Search by name or ID">
+        <form action="index.php" method="POST" name="form" class="form">
+            <input type="text" id="pokemon-search" name="pokemon" placeholder="Name or ID">
             <button id="get-pokemon" value="button">Get pokemon</button>
         </form>
     </div>
@@ -125,7 +125,7 @@ if($species_response->evolves_from_species != null){
             <div class="card-right">
                 <div class="card-right-nameID">
                     <h3 class="card-right-name" id="card-pokemon-name">
-                       <?php echo $response->name;?>
+                       <?php echo ucfirst($response->name);?>
                     </h3>
                     <p class="text" id="card-pokemon-id">
                         <?php echo $response->id;?>
@@ -160,9 +160,9 @@ if($species_response->evolves_from_species != null){
                 </div>
                 <div class="evolutions-container">
                     <div class="evolutions-title">
-                        <h3 class="evo-h3">Evolves from</h3>
+                        <h3 class="evo-h3">Evolves from:</h3>
                     </div>
-                    <div class="evolutions-buttons">
+                    <div class="evolutions-details">
                             <img src="<?php echo $prev_poke_img;?>" alt="" id="previous-evo-avatar">
                             <h3 class="evo-h3">
                                 <?php echo $evolves_from;?>
