@@ -1,0 +1,287 @@
+/* Start of reset code 
+===============================*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%; /* This way 1rem=10px*/
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-size: 1.6;
+  line-height: 1.4;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*============================= 
+End of reset code */
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #ffe5e5;
+}
+
+#error-cont {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 2.4rem;
+  background-color: rgb(255, 46, 46);
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 10px auto;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  gap: 1.2rem;
+}
+
+#pokemon-search {
+  width: 13.4rem;
+  height: 1.7rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#get-pokemon {
+  font-family: 'Press Start 2P', cursive;
+  width: 14rem;
+  height: 2rem;
+  background-color: lightgreen;
+  font-size: 1rem;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#get-pokemon:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  box-shadow: rgb(0, 0, 0) 0px 10px 13px -7px, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+#get-pokemon:active {
+  transform: scale(1);
+  box-shadow: none;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 5px;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60vh;
+  width: 60vw;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.card-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e91d;
+  flex: 1 1 0;
+  min-width: 200px;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.pokemon-image {
+  width: 300px;
+  max-height: auto;
+}
+
+.card-right {
+  background-color: #c0c013;
+  height: 100%;
+  display: flex;
+  flex: 2 1 0;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 20rem;
+  border-radius: 0 5px 5px 0;
+}
+
+.card-right-nameID {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-right-name {
+  font-size: 1.8rem;
+}
+
+.powers-container {
+  display: flex;
+  justify-content: center;
+  min-width: 50%;
+  font-size: 1.2rem;
+}
+
+.powers-title {
+  margin-right: 20px;
+  border-right: 2px solid #1d1de9;
+  padding-right: 10px;
+}
+
+.evolutions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evo-btn {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.evo-h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+}
